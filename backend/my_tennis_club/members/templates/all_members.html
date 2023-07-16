@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <h1>Hello, Members!!!</h1>
     <h2>Members</h2>
 
     <ul>
       {% for x in mymembers %}
-      <li>{{ x.firstname }} {{ x.lastname }}</li>
+      <li>
+        <a href="details/{{ x.id }}">{{ x.firstname }} {{ x.lastname }}</a>
+      </li>
       {% endfor %}
     </ul>
   </body>
