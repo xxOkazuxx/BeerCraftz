@@ -1,10 +1,14 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
+  <link rel="stylesheet" href="{% static 'myfirst.css' %}" />
   <body>
-    {% for x in fruits %}
-    <h1>{{ x }}</h1>
-    {% endfor %}
+    <div class="mymenu">
+      {% include "mymenu.html" with me="KAZUKI" sponsor="DJANGO" %}
+    </div>
 
-    <p>In views.py you can see what the fruits variable looks like.</p>
+    <div class="footer">
+      {% include 'footer.html' %}
+    </div>
   </body>
 </html>
