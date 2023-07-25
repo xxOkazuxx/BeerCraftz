@@ -1,0 +1,18 @@
+.title {
+  background-color: bisque;
+  width: auto;
+}
+
+.container {
+}
+
+.member-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+  margin: 10px;
+}
